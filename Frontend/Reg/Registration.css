@@ -1,0 +1,263 @@
+body{
+  background: radial-gradient(circle, rgb(34, 40, 49), rgb(39 116 133), rgb(63 213 246));
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+form i {
+  margin-right: -20px;
+  margin-top: -66px;
+  float: right;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: -5px;
+  font-family: 'Orbitron', sans-serif;
+  color: rgb(34, 40, 49);
+  font-size: small;
+  position: absolute;
+}
+a:hover{
+  transition: 0.7s;
+  color: rgb(249, 109, 0);
+}
+.login-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  padding: 40px;
+  transform: translate(-50%,-50%);
+  background-color: rgb(242, 242, 242);
+  backdrop-filter: blur(8px);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+@keyframes underlineAppear {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.success {
+  color: green;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: underlineAppear 1.5s ease-in-out;
+}
+.error {
+  color: red;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: underlineAppear 1.5s ease-in-out;
+}
+.first-color { 
+background: rgb(34, 40, 49); 
+}
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+.second-color { 
+background: rgb(57, 62, 70); 
+}
+.third-color { 
+background: rgb(249, 109, 0); 
+}
+.fourth-color { 
+background: rgb(242, 242, 242); 
+}
+.login-box h2{
+  margin: 10px 0 20px;
+  padding: 0;
+  color: rgb(34, 40, 49);
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.login-box .user-box{
+  position: relative;
+}
+.Input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(34, 40, 49);
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid rgb(57, 62, 70);
+  outline: none;
+  background: transparent;
+}
+.errorInp {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(34, 40, 49);
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid rgb(255, 0, 0);
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(34, 40, 49);
+  pointer-events: none;
+  transition: .5s;
+}
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: rgb(34, 40, 49);
+    font-size: 12px;
+}
+.login-box form button{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(34, 40, 49);
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+.login-box  button:hover{
+    background: rgb(34, 40, 49);
+    color: rgb(249, 109, 0);
+    box-shadow: 0 0 5px rgb(34, 40, 49),
+    0 0 25px rgb(34, 40, 49), 0 0 50px rgb(34, 40, 49), 0 0 100px rgb(34, 40, 49);
+}
+.login-box button span {
+  position: absolute;
+  display: block;
+}
+.login-box button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgb(249, 109, 0));
+  animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+h4{
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  cursor: none;
+}
+#message-container{
+  font-family: 'Orbitron', sans-serif;
+  float: left;
+  font-size: small;
+  background-color: rgb(242, 242, 242);
+  margin-top: 2px;
+  position: inherit;
+  width: 282px;
+  margin-left: 75px;
+}
+img{
+  float: left;
+  margin-right: 5px;
+  width: 20px;
+  cursor: none;
+}
+.login-box button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgb(249, 109, 0));
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+.login-box button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, rgb(249, 109, 0));
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+.login-box button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, rgb(249, 109, 0));
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+        /* width */
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px #c73800; 
+          border-radius: 10px;
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #c73800; 
+          border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #c73800;
+        }

@@ -1,0 +1,7 @@
+Sistemare il fatto che se si è già in home e riclicco su home non mi ricarichi l'home (Per tutte le pagine)
+Fare tabella asportabile in csv o vari formati per vedere i vari log, tipo backup
+Inserire card tramite un invenzione di esportazione di quei dati
+Pagina con impostazioni fatta in check box (saltare l'animazione iniziale, mostare la password o meno all'interno dell'home)
+Fare per windows l'invio della notifica (video insta trovare un utilità)
+Pulire tutti i file dai commenti e console.log per trasformarli in un exe
+Sistemare come si chiamano i campi per inviare la card e cambiarli nella formazione card (Per ora escludere la possibilità di scegliere il campo) (quando abilitarlo andare ai commenti home.html a partire dalla riga 70, togliere il display none dalla freccetta per il menu "fa-chevron-down")

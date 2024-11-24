@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M8la - Home</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/x-icon" href="..\IMG\Logo.png">
+  </head>
+    <body>
+      <nav>
+        <div class="casa">
+          <div>
+            <img src="../Img/Logo.png" alt="">
+            <h1>M8la</h1>
+          </div>
+          <button id="change-mode" class="change-mode">
+            <i class="fa-solid fa-sun fa-xl hidden"></i>
+            <i class="fa-solid fa-moon fa-xl"></i>
+          </button>
+        </div>
+        <ul>
+            <li>
+              <a id="home">All Items</a>
+            </li>
+            <li>
+              <a href="../View-log/Viewlog.html">Storage access</a>
+            </li>
+<!--            <li>-->
+<!--              <a>Management app</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a>News</a>-->
+<!--            </li>-->
+        </ul>
+        <div class="utente">
+          <div class="info">            
+            <a id="name_account" href="">MarioM8la</a>
+            <img src="../Img/Logo.png" id="img-account" alt="">
+          </div>
+        </div>
+      </nav>
+      <div class="kit">
+        <form action="">
+          <input class="search-bar" type="search" required>
+          <i class="fa fa-search"></i>
+        </form>
+      </div>
+      <section id="content-cr" class="">
+        <div id="create-card" class="1">
+          <div id="title" class="hidden">
+            <h2>Create card</h2>
+            <div id="message-container"></div>
+          </div>
+          <div id="info-disp" class="hidden">
+              <figure>
+                <div class="cmpdiv">
+                  <label class="cmp1">Companies</label>
+                </div>
+                <input type="text" id="Cpn_in" class="email_in">
+              </figure>
+              <!-- Per abilitare la tendina di scelta
+              <figure onclick="list(1)">
+              -->
+              <figure>
+                <div class="divinfigure">
+                  <i class="fa-solid fa-chevron-down"></i>
+                  <label id="cng-1">Email</label>
+                  <aside id="list-cr1" class="list hidden">
+                    <div><label onclick="changecnt(11)" id="11">Email</label></div>
+                    <div><label onclick="changecnt(12)" id="12">Password</label></div>
+                    <div><label onclick="changecnt(13)" id="13">Nickname</label></div>
+                    <div><label onclick="changecnt(14)" id="14">Note</label></div>
+                    <div><label onclick="changecnt(15)" id="15">Pin</label></div>
+                  </aside>
+                </div>
+                <input type="email" id="email_in" class="email_in">
+              </figure>
+              <!-- Per abilitare la tendina di scelta
+              <figure onclick="list(2)">
+              -->
+              <figure>
+                <div class="divinfigure">
+                  <i class="fa-solid fa-chevron-down"></i>
+                  <label id="cng-2">Password</label>
+                  <aside id="list-cr2" class="list hidden">
+                    <div><label onclick="changecnt(21)" id="21">Email</label></div>
+                    <div><label onclick="changecnt(22)" id="22">Password</label></div>
+                    <div><label onclick="changecnt(23)" id="23">Nickname</label></div>
+                    <div><label onclick="changecnt(24)" id="24">Note</label></div>
+                    <div><label onclick="changecnt(25)" id="25">Pin</label></div>
+                  </aside>
+                </div>
+                <input type="password" id="pass_in" class="email_in">
+              </figure>
+              <!-- Per abilitare la tendina di scelta
+              <figure onclick="list(3)">
+              -->
+              <figure>
+                <div class="divinfigure">
+                  <i class="fa-solid fa-chevron-down"></i>
+                  <label id="cng-3">Nickname</label>
+                  <aside id="list-cr3" class="list hidden">
+                    <div><label onclick="changecnt(31)" id="31">Email</label></div>
+                    <div><label onclick="changecnt(32)" id="32">Password</label></div>
+                    <div><label onclick="changecnt(33)" id="33">Nickname</label></div>
+                    <div><label onclick="changecnt(34)" id="34">Note</label></div>
+                    <div><label onclick="changecnt(35)" id="35">Pin</label></div>
+                  </aside>
+                </div>
+                <input type="text" id="nick_in" class="email_in">
+              </figure>
+              <!-- Per abilitare la tendina di scelta
+              <figure onclick="list(4)">
+              -->
+              <figure>
+                <div class="divinfigure">
+                  <i class="fa-solid fa-chevron-down"></i>
+                  <label id="cng-4">Note</label>
+                  <aside id="list-cr4" class="list hidden">
+                    <div><label onclick="changecnt(41)" id="41">Email</label></div>
+                    <div><label onclick="changecnt(42)" id="42">Password</label></div>
+                    <div><label onclick="changecnt(43)" id="43">Nickname</label></div>
+                    <div><label onclick="changecnt(44)" id="44">Note</label></div>
+                    <div><label onclick="changecnt(45)" id="45">Pin</label></div>
+                  </aside>
+                </div>
+                <input type="text" id="note_in" class="email_in">
+              </figure>
+          </div>
+          <div id="buttoncard" class="hidden">
+            <button onclick="send()">Confirm</button>
+          </div>
+        </div>
+      </section>
+      <section id="modifier-cnt" class="">
+          <div id="CardOpnCls" class="">
+            <div id="titleModify" class="hidden">
+              <div class="left"><button id="BackModify"><i class="fa-solid fa-left-long fa-2xl"></i></button></div>
+              <div class="center"><h1>Card update</h1></div>
+              <div class="right"><div id="message-container"></div></div> <!-- Ricordati che esiste un altro in questa pagina quindi vedi eventuali problemi -->
+            </div>
+            <div id="mainModify" class="hidden">
+              <div>
+                <p>Company</p>
+                <input type="text" id="EditCpy" class="email_in2">
+              </div>
+              <div>
+                <p>Email</p>
+                <input type="text" id="EditEmail" class="email_in2">
+              </div>
+              <div>
+                <p>Password</p>
+                <input type="text" id="Editpw" class="email_in2">
+              </div>
+              <div>
+                <p>Nickname</p>
+                <input type="text" id="EditNick" class="email_in2">
+              </div>
+              <div>
+                <p>Note</p>
+                <input type="text" id="EditNote" class="email_in2">
+              </div>
+            </div>
+            <div id="buttonModify" class="hidden">
+              <button id="Deletedit" class="Deletedit">Delete</button>
+              <button id="Updatedit" class="Updatedit">Update</button>
+            </div>
+          </div>
+      </section>
+      <main id="main">
+<!--      <div>-->
+<!--          <section class="company">-->
+<!--            <button><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></button>-->
+<!--            <h2 id="Azienda" class="Azienda">Epic Games</h2>-->
+<!--          </section>-->
+<!--          <hr>-->
+<!--          <section class="info-card">-->
+<!--            <section>-->
+<!--              <button id="CopyEmail"><i class="fa-solid fa-copy fa-xl"></i></button>-->
+<!--              <h4 id="email" class="email">mario.m8la@gmail.com</h4>-->
+<!--            </section>-->
+<!--            <section>-->
+<!--              <button id="CopyPassword"><i class="fa-solid fa-copy fa-xl"></i></button>-->
+<!--              <h4 id="pass" class="pass">Anonymous!</h4>-->
+<!--            </section>-->
+<!--             <section>-->
+<!--              <button id="CopyNickname"><i class="fa-solid fa-copy fa-xl"></i></button>-->
+<!--              <h4 id="nickname" class="nickname">MarioM8la</h4>-->
+<!--            </section>-->
+<!--            <section>-->
+<!--              <button id="CopyNota"><i class="fa-solid fa-copy fa-xl"></i></button>-->
+<!--              <h4 id="nota" class="nota">709439</h4>-->
+<!--            </section>-->
+<!--          </section>-->
+<!--        </div> -->
+      </main>
+      <section class="kit2">
+        <button id="button-plus" class="button-plus">
+          <i id="send-info" class="fa-solid fa-check fa-2xl hidden"></i>
+          <h2 id="plus.id" class="plus">+</h2>
+        </button>
+      </section>
+      <script type="text/javascript" src="../../Backend/Home.js"></script>
+    </body>
+</html>
