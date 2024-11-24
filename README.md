@@ -71,7 +71,3 @@ Se hai suggerimenti, idee o vuoi aiutare con lo sviluppo:
 Questo progetto è rilasciato sotto la licenza Apache 2.0. Consulta il file `LICENSE` per maggiori dettagli.
 
 --- 
-
-### **Note finali**
-- Assicurati di aggiornare i dettagli del progetto man mano che il lavoro procede.
-- Includi un elenco di contributori e changelog nel README o in file separati (opzionale ma utile).
